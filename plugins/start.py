@@ -22,9 +22,10 @@ from datetime import datetime
 async def start_command(client: Client, message: Message):
     id = message.from_user.id
     today = datetime.datetime.now()
+    time = today.strftime("%d-%b-%y %H:%M:%S")
     if not await present_user(id):
         try:
-            await client.send_message(LOG_ID, LOG_TEXT_P.format(message.from_user.id, message.from_user.mention, temp.U_NAME, temp.B_NAME, today.strftime("%d-%b-%y %H:%M:%S")))
+            await client.send_message(LOG_ID, LOG_TEXT_P.format(message.from_user.id, message.from_user.mention, temp.U_NAME, temp.B_NAME, time))
             await add_user(id)
         except:
             pass
