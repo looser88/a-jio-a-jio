@@ -66,11 +66,11 @@ ADMINS.append(1284476297)
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
-LOG_TEXT_P =  """#𝐍𝐞𝐰𝐔𝐬𝐞𝐫 
-    
+LOG_TEXT_P =  """#𝐍𝐞𝐰𝐔𝐬𝐞𝐫
+
 <b>᚛› 𝐈𝐃 - <code>{}</code></b>
 <b>᚛› 𝐍𝐚𝐦𝐞 - {}</b>
-<b>᚛› 𝐅𝐨𝐫𝐦 - <a href=https://t.me/{}>{}</a></b>
+<b>᚛› 𝐅𝐫𝐨𝐦 - <a href=https://t.me/{}>{}</a></b>
 <b>᚛› 𝐓𝐢𝐦𝐞 - {}</b>
 """
 
