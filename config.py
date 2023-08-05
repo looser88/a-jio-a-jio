@@ -66,6 +66,12 @@ ADMINS.append(1284476297)
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
+LOG_TEXT_P =  """#𝐍𝐞𝐰𝐔𝐬𝐞𝐫
+    
+<b>᚛› 𝐈𝐃 - <code>{}</code></b>
+<b>᚛› 𝐍𝐚𝐦𝐞 - {}</b>
+"""
+
 logging.basicConfig(
     level=logging.INFO,
     format="[%(asctime)s - %(levelname)s] - %(name)s - %(message)s",
