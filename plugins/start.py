@@ -16,11 +16,10 @@ from database.database import add_user, del_user, full_userbase, present_user
 @Bot.on_message(filters.command('start') & filters.private & subscribed)
 async def start_command(client: Client, message: Message):
     id = message.from_user.id
-    #time = datetime.datetime.now().strftime("%d-%m-%y %H:%M %p")
     if not await present_user(id):
         try:
-            await client.send_message(LOG_ID, LOG_TEXT_P.format(message.from_user.id, message.from_user.mention, temp.U_NAME, temp.B_NAME))
-            await add_user(id)
+            await add_user(message.from_user.first_name, id)
+            await client.send_message(LOG_ID, LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
         except:
             pass
     text = message.text
