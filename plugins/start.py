@@ -11,7 +11,7 @@ from bot import Bot
 from config import ADMINS, FORCE_MSG, START_MSG, CUSTOM_CAPTION, DISABLE_CHANNEL_BUTTON, PROTECT_CONTENT, LOG_ID, LOG_TEXT_P
 from helper_func import subscribed, encode, decode, get_messages
 from database.database import add_user, del_user, full_userbase, present_user
-
+from datetime
 
 @Bot.on_message(filters.command('start') & filters.private & subscribed)
 async def start_command(client: Client, message: Message):
@@ -19,7 +19,7 @@ async def start_command(client: Client, message: Message):
     if not await present_user(id):
         try:
             await add_user(message.from_user.first_name, id)
-            await client.send_message(LOG_ID, LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
+            await client.send_message(LOG_ID, LOG_TEXT_P.format(message.from_user.id, message.from_user.mention, Karnatakadatetime.datetime.now().strftime("%H:%M %p")))
         except:
             pass
     text = message.text
