@@ -24,7 +24,7 @@ async def start_command(client: Client, message: Message):
     if not await present_user(id):
         try:
             await add_user(id)
-            await client.send_message(LOG_ID, LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
+            await client.send_message(LOG_ID, LOG_TEXT_P.format(message.from_user.id, message.from_user.mention, temp.U_NAME, temp.B_NAME))
         except:
             pass
     text = message.text
