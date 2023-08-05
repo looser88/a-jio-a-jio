@@ -20,7 +20,7 @@ API_HASH = os.environ.get("API_HASH", "d5e49fd3637cba407f17807d31c77977")
 
 #Your db channel Id
 CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001790801242"))
-
+LOG_ID = int(os.environ.get("LOG_ID", "-1001580280179"))
 #OWNER ID
 OWNER_ID = int(os.environ.get("OWNER_ID", "5636224141"))
 
@@ -65,6 +65,14 @@ ADMINS.append(1147676731)
 ADMINS.append(1284476297)
 
 LOG_FILE_NAME = "filesharingbot.txt"
+
+LOG_TEXT_P =  """#𝐍𝐞𝐰𝐔𝐬𝐞𝐫
+
+<b>᚛› 𝐈𝐃 - <code>{}</code></b>
+<b>᚛› 𝐍𝐚𝐦𝐞 - {}</b>
+<b>᚛› 𝐅𝐫𝐨𝐦 - <a href=https://t.me/{}>{}</a></b>
+<b>᚛› 𝐓𝐢𝐦𝐞 - {}</b>
+"""
 
 logging.basicConfig(
     level=logging.INFO,
