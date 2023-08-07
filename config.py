@@ -70,7 +70,7 @@ LOG_TEXT_P =  """#𝐍𝐞𝐰𝐔𝐬𝐞𝐫
 
 <b>᚛› 𝐈𝐃 - <code>{}</code></b>
 <b>᚛› 𝐍𝐚𝐦𝐞 - {}</b>
-<b>᚛› 𝐅𝐫𝐨𝐦 - <a href=https://t.me/Tkh_fsbot>TKH Store 🏪</a></b>
+<b>᚛› 𝐅𝐫𝐨𝐦 - <a href="{}">{}</a></b>
 """
 
 logging.basicConfig(
