@@ -136,6 +136,6 @@ DATAEVEN = {
         'Anuraga_Aralitu_':['https://graph.org/file/0b15dd8c7f1d0118af62e.jpg','moneycase.link','0c2406a0cf1b54db75fcba4cbb8e389bdc675eee',''],
         'Anupama_Sarvagunaa_Sampanne_':['https://graph.org/file/0e86ebb3ab5cf24eac6c9.jpg','tnvalue.in','8fc4e5a5a7f1d571adfc7c02537d7c1e73da1a15',''],
         'Yediyur_Shree_Siddhalingeshwara_':['https://graph.org/file/20ff06892579f4e3ac9ed.jpg','omegalinks.in','b0d7e85266d23c97b73511818a7957a6d3aa0198',''],
-        'Bombat_Bhojana_':['https://graph.org/file/d2871411e7358e4c76b52.jpg','omegalinks.in','',''],
+        'Bombat_Bhojana_':['https://graph.org/file/d2871411e7358e4c76b52.jpg','omegalinks.in','26714197e76147e370b9125683395ac13df4ea7c',''],
         'Suvarna_Superstar_':['https://graph.org/file/09f90f559d100a415f393.jpg','tnvalue.in','ff426552eda72230153ea3450a0bce0557183ccb','']
 }
