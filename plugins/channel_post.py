@@ -37,7 +37,7 @@ async def channel_post(client: Client, message: Message):
             SL_API=DATAODD[filname][2] #for particuler api 
           # chtid=message.chat.id # if you want pic+formet into bot pm 
             bot_msg = await message.reply_text("Please Wait...!", quote = True) #reply text please wait... to bot
-            await asyncio.sleep(3)
+            await asyncio.sleep(1)
     elif int(dateexc) % 2 == 0: #checking for EVEN
         if filname in media.file_name:
             chtid=int(DATAEVEN[filname][3])
@@ -46,7 +46,7 @@ async def channel_post(client: Client, message: Message):
             SL_API=DATAEVEN[filname][2] 
            #chtid=message.chat.id
             bot_msg = await message.reply_text("Please Wait...!", quote = True) #reply text please wait... to bot
-            await asyncio.sleep(3)
+            await asyncio.sleep(1)
     else:
         reply_text = await message.reply_text("❌Don't send me messages directly I'm only for serials!")
         
@@ -65,8 +65,14 @@ async def channel_post(client: Client, message: Message):
     Tlink = f"https://telegram.me/{client.username}?start={base64_string}"
     
     Slink = await get_short(SL_URL, SL_API, Tlink) #generating short link with particular domine and api
-    await bot_msg.edit("sending photo to Target chat")
-    await asyncio.sleep(2)
+    await bot_msg.edit("Analysing....!")
+    await asyncio.sleep(1)
+    await bot_msg.edit("Wait Sending Photo ▣ ▢ ▢ ")
+    await asyncio.sleep(1)
+    await bot_msg.edit("Wait Sending Photo ▣ ▣ ▢ ")
+    await asyncio.sleep(1)
+    await bot_msg.edit("Wait Sending Photo ▣ ▣ ▣ ")
+    await asyncio.sleep(1)
     await client.send_photo(chat_id=chtid, photo=pic, caption=FOMET.format(DATEDAY[-1], Slink, Slink))
     await asyncio.sleep(1)
     await bot_msg.edit(BOTEFITMSG.format(filname, botfsno[0], Tlink, Slink, DATEDAY[-1])) #msg edit to "please wait...(see line 39" msg ==> and finally the elements belongs to sent serials are updated here
