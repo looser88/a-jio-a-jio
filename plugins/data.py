@@ -7,20 +7,20 @@ FOMET = """
 
                              ⚜⚜⚜⚜⚜     
 ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ :-
-{}
-{}
+<b>{}</b>
+<b>{}</b>
 
   👇👇 𝐇𝐨𝐰 𝐭𝐨 𝐨𝐩𝐞𝐧 𝐥𝐢𝐧𝐤👇👇
-https://t.me/+Sb5ro1gyhgY0NWM1
-https://t.me/+Sb5ro1gyhgY0NWM1
+<b>https://t.me/+Sb5ro1gyhgY0NWM1</b>
+<b>https://t.me/+Sb5ro1gyhgY0NWM1</b>
   """
-BOTEFITMSG = """<b>
-Message Successfully sent ☺️
-Elements in "{}{}"
-1.Telegram Link: <a href="{}">Tlink</a>
-2.Short Link: <a href="{}">SLink</a>
-3.Date : {} 
-</b>"""
+BOTEFITMSG = """
+Message Sent Successfully ✅
+Elements in <b>"{}{}"</b>
+1.Telegram Link: <b><a href="{}">Tlink</a></b>
+2.Short Link: <b><a href="{}">SLink</a></b>
+3.Date : <b>{}</b>
+"""
 DATAODD = {
         'Trinayani_':['https://graph.org/file/1f2827a0980cc418ee6e1.jpg','tnvalue.in','ff426552eda72230153ea3450a0bce0557183ccb','-1001748750847'],
         'Annapoorna_':['https://graph.org/file/baff21a920cc09f0ba89a.jpg','moneycase.link','0c2406a0cf1b54db75fcba4cbb8e389bdc675eee','-1001748750847'],
