@@ -76,7 +76,7 @@ async def channel_post(client: Client, message: Message):
     if len(DATEDAY)==0:
         await bot_msg.edit("Error: invalid date please set /date")
     else:
-        await client.send_photo(chat_id=chtid, photo=pic, caption=FOMET.format(botfsno, DATEDAY[-1], Slink, Slink))
+        await client.send_photo(chat_id=chtid, photo=pic, caption=FOMET.format(botfsno[0], DATEDAY[-1], Slink, Slink))
         await asyncio.sleep(1)
     await bot_msg.edit(BOTEFITMSG.format(filname, botfsno[0], Tlink, Slink, DATEDAY[-1])) #msg edit to "please wait...(see line 39" msg ==> and finally the elements belongs to sent serials are updated here
     #await e_pic.edit) # msg edit in forwarder channel = "pic without captions (see line 41)" ==> thats return to our given format and short link ,date are updated here
