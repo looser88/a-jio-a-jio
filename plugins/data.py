@@ -24,11 +24,12 @@ https://t.me/+Sb5ro1gyhgY0NWM1
   """
 # A simple format return sent elements datails see (line 72, 39 in pluggins->channel post)
 BOTEFITMSG = """
-Message Sent Successfully ✅
+Post Sent Successfully ✅
 Elements in <b>"{}{}"</b>
-1.Telegram Link: <b><a href="{}">Tlink</a></b>
+
+1.TG Link. :  <b><a href="{}">Tlink</a></b>
 2.Short Link: <b><a href="{}">SLink</a></b>
-3.Date : <b>{}</b>
+3.Date.    :  <b>{}</b>
 """
 #whole serials data return in dictionary
 ############{'serial name':["pic", "short link domin", "short link api", "To channel id"]}###############
