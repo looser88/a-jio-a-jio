@@ -11,14 +11,11 @@ FOMET = """
 
                        ⚜⚜⚜⍟⚜⚜⚜    
  
-YOUR EPISODE LINK 🔗 
+    YOUR EPISODE LINK 🔗 
 <b>{}</b>
 <b>{}</b>
-
-★✭✮✯✬☆ ✿ ✰✯✬✫✩✭✬
 
         👀👩‍💻 𝐇𝐨𝐰 𝐭𝐨 𝐨𝐩𝐞𝐧 👩‍💻👀
-
 https://t.me/+Sb5ro1gyhgY0NWM1
 https://t.me/+Sb5ro1gyhgY0NWM1
   """
@@ -27,9 +24,9 @@ BOTEFITMSG = """
 Post Sent Successfully ✅
 Elements in <b>"{}{}"</b>
 
-1.TG Link. :  <b><a href="{}">Tlink</a></b>
-2.Short Link: <b><a href="{}">SLink</a></b>
-3.Date.    :  <b>{}</b>
+1. <b>TG Link. :  <a href="{}">Tlink</a></b>
+2. <b>Short Link: <a href="{}">SLink</a></b>
+3. <b>Date.    :  {}</b>
 """
 #whole serials data return in dictionary
 ############{'serial name':["pic", "short link domin", "short link api", "To channel id"]}###############
