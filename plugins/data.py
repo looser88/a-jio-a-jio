@@ -24,8 +24,8 @@ BOTEFITMSG = """
 Post Sent Successfully ✅
 Elements in <b>"{}{}"</b>
 
-<b>TG Link. :  <a href="{}">Tlink</a></b> & <b>Short Link: <a href="{}">SLink</a></b>
-           <b>Date.    :  {}</b>
+<b>TG Link : <a href="{}">Tlink</a></b> & <b>Short Link: <a href="{}">SLink</a></b>
+             <b>Date : {}</b>
 """
 #whole serials data return in dictionary
 ############{'serial name':["pic", "short link domin", "short link api", "To channel id"]}###############
