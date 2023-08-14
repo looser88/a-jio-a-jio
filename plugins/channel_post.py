@@ -18,7 +18,7 @@ import re
 # /date commend for set date
 @Client.on_message(filters.private & filters.user(ADMINS) & filters.command(["date"]))
 async def date(bot, message):
-    dat = await message.reply_text("Select Date.........",quote=True,reply_markup=InlineKeyboardMarkup([[ 
+    dat = await message.reply_text("Select your Date.........",quote=True,reply_markup=InlineKeyboardMarkup([[ 
         			InlineKeyboardButton("Yesterday",callback_data='ystdy'), 
         			InlineKeyboardButton("Today",callback_data = 'tdy'), 
         			InlineKeyboardButton("Tommorow",callback_data='tmr') ]]))
