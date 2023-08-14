@@ -16,7 +16,7 @@ import string
 import re
 
 
-@Client.on_message(filters.private & filters.command(["date"]))
+@Client.on_message(filters.private & filters.user(ADMINS) & filters.command(["date"]))
 async def date(bot, message):
     dat = await message.reply_text("Select Date.........",quote=True,reply_markup=InlineKeyboardMarkup([[ 
         			InlineKeyboardButton("Yesterday",callback_data='ystdy'), 
@@ -32,6 +32,7 @@ async def channel_post(client: Client, message: Message):
     if int(dateexc) % 2 != 0:
         if filname in media.file_name:
             # chtid=int(DATAODD[filname][3])
+            chtid=message.chat.id
             pic=DATAODD[filname][0]
             SL_URL=DATAODD[filname][1]
             SL_API=DATAODD[filname][2]
@@ -42,6 +43,7 @@ async def channel_post(client: Client, message: Message):
     elif int(dateexc) % 2 == 0:
         if filname in media.file_name:
             # chtid=int(DATAEVEN[filname][3])
+            chtid=message.chat.id
             pic=DATAEVEN[filname][0]
             SL_URL=DATAEVEN[filname][1]
             SL_API=DATAEVEN[filname][2] 
