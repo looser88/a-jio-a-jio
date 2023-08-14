@@ -28,7 +28,7 @@ async def channel_post(client: Client, message: Message):
     dateexc = datetime.now().strftime("%d")
     media = message.video or message.document
     filname= media.file_name.split("S0")[0]#[1][2]etc
-    botfsno= re.findall("S0.+E\d+", media.file_name)
+    botfsno= re.findall("S0.+E\d+\d", media.file_name)
     if int(dateexc) % 2 != 0:
         if filname in media.file_name:
             # chtid=int(DATAODD[filname][3])
