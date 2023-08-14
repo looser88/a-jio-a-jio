@@ -38,7 +38,7 @@ async def channel_post(client: Client, message: Message):
           # chtid=message.chat.id # if you want pic+formet into bot pm 
             bot_msg = await message.reply_text("Please Wait...!", quote = True) #reply text please wait... to bot
             await asyncio.sleep(2)
-            e_pic = await client.send_photo(chat_id=message.chat.id, photo=pic, caption=f"....") #1st sending pic without captions to given chat id  
+            e_pic = await client.send_photo(chat_id=chtid, photo=pic, caption=f"....") #1st sending pic without captions to given chat id  
             await asyncio.sleep(2)
     elif int(dateexc) % 2 == 0: #checking for EVEN
         if filname in media.file_name:
@@ -49,7 +49,7 @@ async def channel_post(client: Client, message: Message):
            #chtid=message.chat.id
             bot_msg = await message.reply_text("Please Wait...!", quote = True)
             await asyncio.sleep(2)
-            e_pic = await client.send_photo(chat_id=message.chat.id, photo=pic, caption=f"....")
+            e_pic = await client.send_photo(chat_id=chtid, photo=pic, caption=f"....")
             await asyncio.sleep(2)
     else:
         reply_text = await message.reply_text("❌Don't send me messages directly I'm only for serials!")
