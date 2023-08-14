@@ -1,3 +1,5 @@
+
+# A simple format under pic
 FOMET = """
 ▬▬▬▬▬▬▬ ❂ ▬▬▬▬▬▬▬
        
@@ -14,6 +16,7 @@ FOMET = """
 <b>https://t.me/+Sb5ro1gyhgY0NWM1</b>
 <b>https://t.me/+Sb5ro1gyhgY0NWM1</b>
   """
+# A simple format return sent elements datails see (line 72, 39 in pluggins->channel post)
 BOTEFITMSG = """
 Message Sent Successfully ✅
 Elements in <b>"{}{}"</b>
@@ -21,6 +24,8 @@ Elements in <b>"{}{}"</b>
 2.Short Link: <b><a href="{}">SLink</a></b>
 3.Date : <b>{}</b>
 """
+#whole serials data return in dictionary
+############{'serial name':["pic", "short link domin", "short link api", "To channel id"]}###############
 DATAODD = {
         'Trinayani_':['https://graph.org/file/1f2827a0980cc418ee6e1.jpg','tnvalue.in','ff426552eda72230153ea3450a0bce0557183ccb','-1001942664190'],
         'Annapoorna_':['https://graph.org/file/baff21a920cc09f0ba89a.jpg','moneycase.link','0c2406a0cf1b54db75fcba4cbb8e389bdc675eee','-1001942664190'],
