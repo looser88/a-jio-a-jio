@@ -11,7 +11,7 @@ global DATEDAY
 DATEDAY = []
 @Bot.on_callback_query()
 async def cb_handler(client: Bot, query: CallbackQuery):
-    india = pytz.timezone("Asia/Kolkata")
+    india = pytz.timezone("Asia/Kolkata") #for Indian date and timings 
     data = query.data
     if data == "about":
         await query.message.edit_text(
@@ -38,7 +38,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         await query.message.edit_text(text = f"<b>Date change to :'{DATEDAY[-1]}'</b>", reply_markup=InlineKeyboardMarkup([[ 
         			InlineKeyboardButton("Yesterday",callback_data='ystdy'), 
         			InlineKeyboardButton("Today",callback_data = 'tdy'), 
-        			InlineKeyboardButton("Tommorow",callback_data='tmr') ]]))
+        			InlineKeyboardButton("Tommorow",callback_data='tmr') ]])) # A query msg edit for (in plugins->channel post->line 21) ==> this return a date from previous date stored in DATEDAY variable (line 10)
     elif data == "tdy":
         DATEDAY.clear()
         tda = datetime.now(india)
