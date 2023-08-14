@@ -31,7 +31,7 @@ DATAODD = {
         'Bhoomige_Bandha_Bhagavantha_':['https://graph.org/file/dc3b179fceb487e4847c4.jpg','moneycase.link','bdc62bf7dd54515abf15371b58feb6a1ff2b434a','-1001748750847'],
         'Puttakkana_Makkalu_':['https://graph.org/file/085afbc67400a2066fefd.jpg','tnshort.net','cfafc72b0df2558f0f5ad4e1c906ce9f783281e3',''],
         'Gattimela_':['https://graph.org/file/d3eda0e1961ee06e5cba7.jpg','viplinks.io','fce9e10e2a6fde8681f40ad4bb1cb2675947f9f5',''],
-        'Manemagalu_':['','','',''],
+        'Manemagalu_':['https://graph.org/file/979b1125f1b333d1b8b07.jpg','','',''],
         'Sandhyaraaga_':['https://graph.org/file/98ef89a04dd66bef924ea.jpg','','',''],
         'SeethaRaama_':['https://graph.org/file/d7b3c98a89d0d061f064f.jpg','tnshort.net','0045de7eda3a082a38f05bdd0d1c4de1262709fb',''],
         'Amruthadhaare_':['https://graph.org/file/2ebe4f1d999849a1ca574.jpg','viplinks.io','14c50e972fc9578dc895d3a4b45d7ef4c144ff0a',''],
@@ -42,7 +42,7 @@ DATAODD = {
         'Sathya_':['https://graph.org/file/7f30ff54ecf9b380e4634.jpg','tnshort.net','1183b34c88b1fd4e898d7d9dc7b6fc6a2bea9dd9',''],
         'Dance_Karnataka_Dance_Season_7_':['https://graph.org/file/2d724f7a19f736c405990.jpg','','',''],
         'Bharjari_Bachelors_':['https://graph.org/file/1b28fb7863cc31f732ac4.jpg','','',''],
-        'Couples_Kitchen_':['https://graph.org/file/fa897d25d4d944e8487d5.jpg','','',''],
+        'Couples_Kitchen_':['https://graph.org/file/07d7a9c7707eac7367842.jpg','','',''],
         'Chota_Champion_':['https://graph.org/file/0d77fc85da98174336f8b.jpg','','',''],
           
         'Pavada_Purasha_':['https://graph.org/file/f65651907ba441187f7b1.jpg','tnvalue.in','ff426552eda72230153ea3450a0bce0557183ccb','-1001748750847'],
