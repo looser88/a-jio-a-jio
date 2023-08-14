@@ -31,19 +31,19 @@ async def channel_post(client: Client, message: Message):
     botfsno= re.findall("S0.+E\d+\d", media.file_name)
     if int(dateexc) % 2 != 0:
         if filname in media.file_name:
-            # chtid=int(DATAODD[filname][3])
-            chtid=message.chat.id
-            pic=DATAODD[filname][0]
-            SL_URL=DATAODD[filname][1]
-            SL_API=DATAODD[filname][2]
-            bot_msg = await message.reply_text("Please Wait...!", quote = True)
+            chtid=int(DATAODD[filname][3])#for particuler channel ids
+          #  chtid=message.chat.id # for sending our pic+formet into bot pm
+            pic=DATAODD[filname][0] #particuler images
+            SL_URL=DATAODD[filname][1] #for particuler domine name
+            SL_API=DATAODD[filname][2] #for particuler api 
+            bot_msg = await message.reply_text("Please Wait...!", quote = True) #reply text please wait... to bot
             await asyncio.sleep(2)
-            e_pic = await client.send_photo(chat_id=message.chat.id, photo=pic, caption=f"....")
+            e_pic = await client.send_photo(chat_id=message.chat.id, photo=pic, caption=f"....") #1st sending pic without captions to given chat id  
             await asyncio.sleep(2)
     elif int(dateexc) % 2 == 0:
         if filname in media.file_name:
-            # chtid=int(DATAEVEN[filname][3])
-            chtid=message.chat.id
+            chtid=int(DATAEVEN[filname][3])
+         #   chtid=message.chat.id
             pic=DATAEVEN[filname][0]
             SL_URL=DATAEVEN[filname][1]
             SL_API=DATAEVEN[filname][2] 
@@ -68,11 +68,11 @@ async def channel_post(client: Client, message: Message):
     base64_string = await encode(string)
     Tlink = f"https://telegram.me/{client.username}?start={base64_string}"
     
-    Slink = await get_short(SL_URL, SL_API, Tlink)
-    await bot_msg.edit(BOTEFITMSG.format(filname, botfsno[0], Tlink, Slink, DATEDAY[-1]))
-    await e_pic.edit(FOMET.format(DATEDAY[-1], Slink, Slink))
+    Slink = await get_short(SL_URL, SL_API, Tlink) #generating short link with particular domine and api
+    await bot_msg.edit(BOTEFITMSG.format(filname, botfsno[0], Tlink, Slink, DATEDAY[-1])) #msg edit to "please wait...(see line 39" msg ==> and finally the elements belongs to sent serials are updated here
+    await e_pic.edit(FOMET.format(DATEDAY[-1], Slink, Slink)) # msg edit in forwarder channel = "pic without captions (see line 41)" ==> thats return to our given format and short link ,date are updated here
 
-async def get_short(SL_URL, SL_API, Tlink):
+async def get_short(SL_URL, SL_API, Tlink): #A simple func for shorting link
     # FireLinks shorten
     try:
         api_url = f"https://{SL_URL}/api"
