@@ -1,20 +1,26 @@
 
 # A simple format under pic
 FOMET = """
-▬▬▬▬▬▬▬ ❂ ▬▬▬▬▬▬▬
+Ꮛᴘɪᴤοᴅє ŋο   ➺  <b>{}</b>
+
+▬▬▬▬▬ ✮✯☆★ ❂ ★☆✯✮ ▬▬▬▬▬
        
- 🗓𝐃𝐚𝐭𝐞 :- <b>{}</b>
+𝕯𝖆𝖙𝖊 ➻ <b>{}</b>
 
-            𝐔𝐩𝐥𝐨𝐚𝐝𝐞𝐝 𝐛𝐲 :- @Dot_serials_bot 
+             𝐔𝐩𝐥𝐨𝐚𝐝𝐞𝐝 𝐛𝐲  ➠  @Dot_serials_bot 
 
-                             ⚜⚜⚜⚜⚜     
-ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ :-
+                       ⚜⚜⚜⍟⚜⚜⚜    
+ 
+YOUR EPISODE LINK 🔗 
 <b>{}</b>
 <b>{}</b>
 
-  👇👇 𝐇𝐨𝐰 𝐭𝐨 𝐨𝐩𝐞𝐧 𝐥𝐢𝐧𝐤👇👇
-<b>https://t.me/+Sb5ro1gyhgY0NWM1</b>
-<b>https://t.me/+Sb5ro1gyhgY0NWM1</b>
+★✭✮✯✬☆ ✿ ✰✯✬✫✩✭✬
+
+        👀👩‍💻 𝐇𝐨𝐰 𝐭𝐨 𝐨𝐩𝐞𝐧 👩‍💻👀
+
+https://t.me/+Sb5ro1gyhgY0NWM1
+https://t.me/+Sb5ro1gyhgY0NWM1
   """
 # A simple format return sent elements datails see (line 72, 39 in pluggins->channel post)
 BOTEFITMSG = """
