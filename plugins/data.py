@@ -34,7 +34,7 @@ DATAODD = {
         'Annapoorna_':['https://graph.org/file/baff21a920cc09f0ba89a.jpg','moneycase.link','0c2406a0cf1b54db75fcba4cbb8e389bdc675eee','-1001942664190'],
         'Kalyanamasthu_':['https://graph.org/file/db7a3d7d1a2654540cf99.jpg','omegalinks.in','b0d7e85266d23c97b73511818a7957a6d3aa0198','-1001942664190'],
         'Vaidehi_Parinaya_':['https://graph.org/file/8c7eda434e1f0baae0b81.jpg','omegalinks.in','b0d7e85266d23c97b73511818a7957a6d3aa0198','-1001942664190'],
-        'Punarvivaha_':['https://graph.org/file/70d5850fd6e9ed8cd7bc0.jpg','omnifly.in.net','','-1001942664190'],
+        'Punarvivaha_':['https://graph.org/file/70d5850fd6e9ed8cd7bc0.jpg','omnifly.in.net','cbe98e316fc59e85fc564c324bd963b8de0788f1','-1001942664190'],
         'Paaru_':['https://graph.org/file/f4eccb711889b4e33952a.jpg','tnvalue.in','e496ab76b42f51628da20bb69577397533008f3c','-1001942664190'],
         'Bhoomige_Bandha_Bhagavantha_':['https://graph.org/file/dc3b179fceb487e4847c4.jpg','moneycase.link','bdc62bf7dd54515abf15371b58feb6a1ff2b434a','-1001942664190'],
         'Puttakkana_Makkalu_':['https://graph.org/file/085afbc67400a2066fefd.jpg','tnshort.net','cfafc72b0df2558f0f5ad4e1c906ce9f783281e3','-1001942664190'],
