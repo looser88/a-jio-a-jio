@@ -23,12 +23,12 @@ async def date(bot, message):
         			InlineKeyboardButton("Today",callback_data = 'tdy'), 
         			InlineKeyboardButton("Tommorow",callback_data='tmr') ]]))
 
-@Bot.on_message(filters.private & filters.user(ADMINS) & ~filters.text & ~filters.command(['start','users','broadcast','batch','genlink','stats']))
+@Bot.on_message(filters.private & filters.user(ADMINS) & ~filters.text)
 async def channel_post(client: Client, message: Message):
     #dateexc = datetime.now().strftime("%d")
     media = message.video or message.document
     filname= media.file_name.split("S0")[0]#[1][2]etc
-    botfsno= re.findall("S0.+E\d+\d", media.file_na                    
+    botfsno= re.findall("S0.+E\d+\d", media.file_name)                   
     if len(DATEDAY)==0:
         await bot_msg.edit("Error: invalid date please set /date")
     else:
