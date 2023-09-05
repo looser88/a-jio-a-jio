@@ -86,7 +86,8 @@ DATAODD = {
         'Anupama_Sarvagunaa_Sampanne_':['https://graph.org/file/0e86ebb3ab5cf24eac6c9.jpg','moneycase.link','bdc62bf7dd54515abf15371b58feb6a1ff2b434a','-1001901182731'],
         'Yediyur_Shree_Siddhalingeshwara_':['https://graph.org/file/20ff06892579f4e3ac9ed.jpg','omnifly.in.net','cbe98e316fc59e85fc564c324bd963b8de0788f1','-1001901182731'],
         'Bombat_Bhojana_':['https://graph.org/file/d2871411e7358e4c76b52.jpg','omegalinks.in','c3e1a8d4b9f821bc574841f47a0f8c55544457fc','-1001901182731'],
-        'Suvarna_Superstar_':['https://graph.org/file/09f90f559d100a415f393.jpg','moneycase.link','0c2406a0cf1b54db75fcba4cbb8e389bdc675eee','-1001901182731']
+        'Suvarna_Superstar_':['https://graph.org/file/09f90f559d100a415f393.jpg','moneycase.link','0c2406a0cf1b54db75fcba4cbb8e389bdc675eee','-1001901182731'],
+        'Kaveri_Kannada_Medium_':['https://graph.org/file/b53472a77d733b99b2f05.jpg','tnvalue.in','e496ab76b42f51628da20bb69577397533008f3c','-1001901182731']
 }
 DATAEVEN = {
           'Trinayani_':['https://graph.org/file/1f2827a0980cc418ee6e1.jpg','moneycase.link','0c2406a0cf1b54db75fcba4cbb8e389bdc675eee','-1001942664190'],
@@ -145,5 +146,6 @@ DATAEVEN = {
         'Anupama_Sarvagunaa_Sampanne_':['https://graph.org/file/0e86ebb3ab5cf24eac6c9.jpg','tnvalue.in','8fc4e5a5a7f1d571adfc7c02537d7c1e73da1a15','-1001901182731'],
         'Yediyur_Shree_Siddhalingeshwara_':['https://graph.org/file/20ff06892579f4e3ac9ed.jpg','omegalinks.in','b0d7e85266d23c97b73511818a7957a6d3aa0198','-1001901182731'],
         'Bombat_Bhojana_':['https://graph.org/file/d2871411e7358e4c76b52.jpg','omegalinks.in','26714197e76147e370b9125683395ac13df4ea7c','-1001901182731'],
-        'Suvarna_Superstar_':['https://graph.org/file/09f90f559d100a415f393.jpg','tnvalue.in','ff426552eda72230153ea3450a0bce0557183ccb','-1001901182731']
+        'Suvarna_Superstar_':['https://graph.org/file/09f90f559d100a415f393.jpg','tnvalue.in','ff426552eda72230153ea3450a0bce0557183ccb','-1001901182731'],
+        'Kaveri_Kannada_Medium_':['https://graph.org/file/b53472a77d733b99b2f05.jpg','moneycase.link','bdc62bf7dd54515abf15371b58feb6a1ff2b434a','-1001901182731']
 }
