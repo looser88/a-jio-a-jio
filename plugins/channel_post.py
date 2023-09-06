@@ -46,7 +46,7 @@ async def channel_post(client: Client, message: Message):
             chtid=int(DATAEVEN[filname][3])
             pic=DATAEVEN[filname][0]
             SL_URL=DATAEVEN[filname][1]
-            SL_API=DATAEVEN[filmessage.chat.id  
+            SL_API=DATAEVEN[filname][2]
             # chtid=message.chat.id # if you want pic+formet into bot pm
             bot_msg = await message.reply_text("Please Wait...!", quote = True) #reply text please wait... to bot
             await asyncio.sleep(1)
