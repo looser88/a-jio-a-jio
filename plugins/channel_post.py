@@ -30,11 +30,12 @@ async def channel_post(client: Client, message: Message):
     filname= media.file_name.split("S0")[0]#[1][2]etc
     botfsno= re.findall("S0.+E\d+\d", media.file_name)                   
     if len(DATEDAY)==0:
-        await bot_msg.edit("Error: invalid date please set /date")
+        await client.send_message(chat_id=message.chat.id, "Error: invalid date please set /date")
     else:
         pass                
     if int(DATEDAY[-1][0:2]) % 2 != 0:#chaeking for ODD by given date
         if filname in media.file_name: #matching name in dict key with arrival video file name
+            chtid=int(DATAODD[filname][3])#for particular channel id
             pic=DATAODD[filname][0] #particuler images
             SL_URL=DATAODD[filname][1] #for particuler domine name
             SL_API=DATAODD[filname][2] #for particuler api 
