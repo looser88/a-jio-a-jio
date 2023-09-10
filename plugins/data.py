@@ -29,6 +29,7 @@ Elements in <b>"{}{}"</b>
 """
 #whole serials data return in dictionary
 ############{'serial name':["pic", "short link domin", "short link api", "To channel id"]}###############
+#ex =>>>    '':['','','','']
 DATAODD = {
         'Trinayani_':['https://graph.org/file/1f2827a0980cc418ee6e1.jpg','tnvalue.in','ff426552eda72230153ea3450a0bce0557183ccb','-1001942664190'],
         'Annapoorna_':['https://graph.org/file/baff21a920cc09f0ba89a.jpg','moneycase.link','0c2406a0cf1b54db75fcba4cbb8e389bdc675eee','-1001942664190'],
