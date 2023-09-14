@@ -71,8 +71,11 @@ async def channel_post(client: Client, message: Message):
     await bot_msg.edit("Analysing....!")
     await asyncio.sleep(1)
     Size = await get_size(media.file_size)
+    Siz = get_siz(media.file_size)
     await bot_msg.edit("Getting size....!")
     await asyncio.sleep(1)
+    await client.send_message(chat_id=message.chat.id, text=f"{Siz}")
+    await client.send_message(chat_id=message.chat.id, text=f"{Size}")
     await bot_msg.edit("Wait Sending Post ▣ ▢ ▢ ")
     await asyncio.sleep(0.5)
     await bot_msg.edit("Wait Sending Photo ▣ ▣ ▢ ")
@@ -107,7 +110,18 @@ async def get_size(size):
         i += 1
         size /= 1024.0
     return "%.2f %s" % (round(size,-1), units[i])
+    
+def get_siz(size):
+    """Get size in readable format"""
 
+    units = ["Bytes", "KB", "MB", "GB", "TB", "PB", "EB"]
+    size = float(size)
+    i = 0
+    while size >= 1024.0 and i < len(units):
+        i += 1
+        size /= 1024.0
+    return "%.2f %s" % (round(size,-1), units[i])
+    
 @Bot.on_message(filters.channel & filters.incoming & filters.chat(CHANNEL_ID))
 async def new_post(client: Client, message: Message):
 
