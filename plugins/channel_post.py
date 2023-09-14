@@ -70,13 +70,16 @@ async def channel_post(client: Client, message: Message):
     Slink = await get_short(SL_URL, SL_API, Tlink) #generating short link with particular domine and api
     await bot_msg.edit("Analysing....!")
     await asyncio.sleep(1)
+    Size = get_size(message.file_size)
+    await bot_msg.edit("Getting size....!")
+    await asyncio.sleep(1)
     await bot_msg.edit("Wait Sending Post ▣ ▢ ▢ ")
-    await asyncio.sleep(1)
+    await asyncio.sleep(0.5)
     await bot_msg.edit("Wait Sending Photo ▣ ▣ ▢ ")
-    await asyncio.sleep(1)
+    await asyncio.sleep(0.5)
     await bot_msg.edit("Wait Sending Photo ▣ ▣ ▣ ")
-    await asyncio.sleep(1)
-    await client.send_photo(chat_id=chtid, photo=pic, caption=FOMET.format(botfsno[0], DATEDAY[-1], Slink, Slink))
+    await asyncio.sleep(0.5)
+    await client.send_photo(chat_id=chtid, photo=pic, caption=FOMET.format(botfsno[0], Size, DATEDAY[-1], Slink, Slink))
     await asyncio.sleep(1)
     await bot_msg.edit(BOTEFITMSG.format(filname, botfsno[0], Tlink, Slink, DATEDAY[-1])) #msg edit to "please wait...(see line 39" msg ==> and finally the elements belongs to sent serials are updated here
     #await e_pic.edit) # msg edit in forwarder channel = "pic without captions (see line 41)" ==> thats return to our given format and short link ,date are updated here
@@ -93,7 +96,18 @@ async def get_short(SL_URL, SL_API, Tlink): #A simple func for shorting link
         return url
     except Exception as error:
         return error
-    
+
+async def get_size(size):
+    """Get size in readable format"""
+
+    units = ["Bytes", "KB", "MB", "GB", "TB", "PB", "EB"]
+    size = float(size)
+    i = 0
+    while size >= 1024.0 and i < len(units):
+        i += 1
+        size /= 1024.0
+    return "%.2f %s" % (round(size,-1), units[i])
+
 @Bot.on_message(filters.channel & filters.incoming & filters.chat(CHANNEL_ID))
 async def new_post(client: Client, message: Message):
 
