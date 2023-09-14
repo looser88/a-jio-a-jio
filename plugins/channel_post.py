@@ -70,7 +70,7 @@ async def channel_post(client: Client, message: Message):
     Slink = await get_short(SL_URL, SL_API, Tlink) #generating short link with particular domine and api
     await bot_msg.edit("Analysing....!")
     await asyncio.sleep(1)
-    Size = get_size(media.file_size)
+    Size = await get_size(media.file_size)
     await bot_msg.edit("Getting size....!")
     await asyncio.sleep(1)
     await bot_msg.edit("Wait Sending Post ▣ ▢ ▢ ")
