@@ -53,7 +53,7 @@ DATAODD = {
         'Bharjari_Bachelors_':['https://graph.org/file/1b28fb7863cc31f732ac4.jpg','tnvalue.in','8fc4e5a5a7f1d571adfc7c02537d7c1e73da1a15','-1001942664190'],
         'Couples_Kitchen_':['https://graph.org/file/07d7a9c7707eac7367842.jpg','tnvalue.in','e496ab76b42f51628da20bb69577397533008f3c','-1001942664190'],
         'Chota_Champion_':['https://graph.org/file/0d77fc85da98174336f8b.jpg','moneycase.link','0c2406a0cf1b54db75fcba4cbb8e389bdc675eee','-1001942664190'],
-        'Jodi_No_1_':['https://graph.org/file/034b0251e3e3cbc172ddf.jpg','tnvalue.in','e496ab76b42f51628da20bb69577397533008f3c','-1001942664190'],
+        'Jodi_No_1_Season_2_':['https://graph.org/file/034b0251e3e3cbc172ddf.jpg','tnvalue.in','e496ab76b42f51628da20bb69577397533008f3c','-1001942664190'],
   
         'Pavada_Purasha_':['https://graph.org/file/f65651907ba441187f7b1.jpg','tnvalue.in','ff426552eda72230153ea3450a0bce0557183ccb','-1001965277713'],
         'Olavina_Nildana_':['https://graph.org/file/441e02c5e145609e0eedd.jpg','moneycase.link','0c2406a0cf1b54db75fcba4cbb8e389bdc675eee','-1001965277713'],
@@ -114,7 +114,7 @@ DATAEVEN = {
         'Bharjari_Bachelors_':['https://graph.org/file/1b28fb7863cc31f732ac4.jpg','moneycase.link','bdc62bf7dd54515abf15371b58feb6a1ff2b434a','-1001942664190'],
         'Couples_Kitchen_':['https://graph.org/file/07d7a9c7707eac7367842.jpg','moneycase.link','f35b0c3ac535a200b3287c698b652e58b4689b6f','-1001942664190'],
         'Chota_Champion_':['https://graph.org/file/0d77fc85da98174336f8b.jpg','tnvalue.in','ff426552eda72230153ea3450a0bce0557183ccb','-1001942664190'],
-        'Jodi_No_1_':['https://graph.org/file/034b0251e3e3cbc172ddf.jpg','moneycase.link','f35b0c3ac535a200b3287c698b652e58b4689b6f','-1001942664190'],
+        'Jodi_No_1_Season_2_':['https://graph.org/file/034b0251e3e3cbc172ddf.jpg','moneycase.link','f35b0c3ac535a200b3287c698b652e58b4689b6f','-1001942664190'],
   
         'Pavada_Purasha_':['https://graph.org/file/f65651907ba441187f7b1.jpg','moneycase.link','0c2406a0cf1b54db75fcba4cbb8e389bdc675eee','-1001965277713'],
         'Olavina_Nildana_':['https://graph.org/file/441e02c5e145609e0eedd.jpg','tnvalue.in','ff426552eda72230153ea3450a0bce0557183ccb','-1001965277713'],
