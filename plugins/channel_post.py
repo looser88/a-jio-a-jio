@@ -106,7 +106,7 @@ async def get_size(size):
     while size >= 1024.0 and i < len(units):
         i += 1
         size /= 1024.0
-    return "%.f %s" % (round(size,-1), units[i])
+    return "%.1f %s" % (size, units[i])
   
 @Bot.on_message(filters.channel & filters.incoming & filters.chat(CHANNEL_ID))
 async def new_post(client: Client, message: Message):
