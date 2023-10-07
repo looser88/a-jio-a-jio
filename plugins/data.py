@@ -89,7 +89,8 @@ DATAODD = {
         'Yediyur_Shree_Siddhalingeshwara_':['https://graph.org/file/20ff06892579f4e3ac9ed.jpg','links4money.com','ba4f1e7f7cfbea8b02c4c031be2270e354e95d47','-1001901182731'],
         'Bombat_Bhojana_':['https://graph.org/file/d2871411e7358e4c76b52.jpg','links4money.com','f2c99e727ba0a517e53f77a31b4f79d8acfc318c','-1001901182731'],
         'Suvarna_Superstar_':['https://graph.org/file/09f90f559d100a415f393.jpg','moneycase.link','0c2406a0cf1b54db75fcba4cbb8e389bdc675eee','-1001901182731'],
-        'Kaveri_Kannada_Medium_':['https://graph.org/file/b53472a77d733b99b2f05.jpg','tnvalue.in','e496ab76b42f51628da20bb69577397533008f3c','-1001901182731']
+        'Kaveri_Kannada_Medium_':['https://graph.org/file/b53472a77d733b99b2f05.jpg','tnvalue.in','e496ab76b42f51628da20bb69577397533008f3c','-1001901182731'],
+        'Avanu_Matthe_Shravani_':['https://graph.org/file/c0403382ffa200212ae4f.jpg','tnshort.net','1183b34c88b1fd4e898d7d9dc7b6fc6a2bea9dd9','-1001901182731']
 }
 DATAEVEN = {
         'Trinayani_':['https://graph.org/file/1f2827a0980cc418ee6e1.jpg','moneycase.link','0c2406a0cf1b54db75fcba4cbb8e389bdc675eee','-1001942664190'],
@@ -150,5 +151,7 @@ DATAEVEN = {
         'Yediyur_Shree_Siddhalingeshwara_':['https://graph.org/file/20ff06892579f4e3ac9ed.jpg','links4money.com','668f8a8d31c4d5e55da03d0d21ae740f3caf5d14','-1001901182731'],
         'Bombat_Bhojana_':['https://graph.org/file/d2871411e7358e4c76b52.jpg','links4money.com','ba4f1e7f7cfbea8b02c4c031be2270e354e95d47','-1001901182731'],
         'Suvarna_Superstar_':['https://graph.org/file/09f90f559d100a415f393.jpg','tnvalue.in','ff426552eda72230153ea3450a0bce0557183ccb','-1001901182731'],
-        'Kaveri_Kannada_Medium_':['https://graph.org/file/b53472a77d733b99b2f05.jpg','moneycase.link','bdc62bf7dd54515abf15371b58feb6a1ff2b434a','-1001901182731']
+        'Kaveri_Kannada_Medium_':['https://graph.org/file/b53472a77d733b99b2f05.jpg','moneycase.link','bdc62bf7dd54515abf15371b58feb6a1ff2b434a','-1001901182731'],
+        'Avanu_Matthe_Shravani_':['https://graph.org/file/c0403382ffa200212ae4f.jpg','linkshortify.com','4bc6f1e34d0409e5b8bd2197d42462bb1ec6048a','-1001901182731']
 }
+
