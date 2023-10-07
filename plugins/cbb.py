@@ -8,10 +8,14 @@ from config import OWNER_ID
 from datetime import datetime, timedelta
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 
+async def timeout(list, timeout):
+    start_time = time.time()
+    while time.time() < start_time + timeout:
+      list.clear()
+    return 
+    
 global DATEDAY
-
 DATEDAY = []
-timeout(DATEDAY,10)
 @Bot.on_callback_query()
 async def cb_handler(client: Bot, query: CallbackQuery):
     india = pytz.timezone("Asia/Kolkata") #for Indian date and timings 
@@ -42,7 +46,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         			InlineKeyboardButton("Yesterday",callback_data='ystdy'), 
         			InlineKeyboardButton("Today",callback_data = 'tdy'), 
         			InlineKeyboardButton("Tommorow",callback_data='tmr') ]])) # A query msg edit for (in plugins->channel post->line 21) ==> this return a date from previous date stored in DATEDAY variable (line 10)
-        
+        await timeout(DATEDAY,10)
     elif data == "tdy":
         DATEDAY.clear()
         tda = datetime.now(india)
@@ -51,7 +55,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         			InlineKeyboardButton("Yesterday",callback_data='ystdy'), 
         			InlineKeyboardButton("Today",callback_data = 'tdy'), 
         			InlineKeyboardButton("Tommorow",callback_data='tmr') ]]))
-       
+       await timeout(DATEDAY,10)
     elif data == "tmr":
         DATEDAY.clear()
         tm = datetime.now(india)+timedelta(1)
@@ -60,12 +64,6 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         			InlineKeyboardButton("Yesterday",callback_data='ystdy'), 
         			InlineKeyboardButton("Today",callback_data = 'tdy'), 
         			InlineKeyboardButton("Tommorow",callback_data='tmr') ]]))
-        
+        await timeout(DATEDAY,10)
     else:
         pass
-
-
-def timeout(list, timeout):
-  start_time = time.time()
-  while time.time() < start_time + timeout:
-    list.clear()
