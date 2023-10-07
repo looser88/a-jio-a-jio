@@ -16,6 +16,7 @@ async def timeout(list, timeout):
     
 global DATEDAY
 DATEDAY = []
+timeout(DATEDAY,10)
 @Bot.on_callback_query()
 async def cb_handler(client: Bot, query: CallbackQuery):
     india = pytz.timezone("Asia/Kolkata") #for Indian date and timings 
@@ -39,30 +40,30 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         except:
             pass
     elif data == "ystdy":
-        #DATEDAY.clear()
+        DATEDAY.clear()
         ye = datetime.now(india)-timedelta(1)
         DATEDAY.append(str(ye.strftime("%d ⚡ %m ⚡ %Y")))
-        timeout(DATEDAY,10)
+        #timeout(DATEDAY,10)
         await query.message.edit_text(text = f"<b>Date change to :'{DATEDAY[-1]}'</b>", reply_markup=InlineKeyboardMarkup([[ 
         			InlineKeyboardButton("Yesterday",callback_data='ystdy'), 
         			InlineKeyboardButton("Today",callback_data = 'tdy'), 
         			InlineKeyboardButton("Tommorow",callback_data='tmr') ]])) # A query msg edit for (in plugins->channel post->line 21) ==> this return a date from previous date stored in DATEDAY variable (line 10)
         
     elif data == "tdy":
-        #DATEDAY.clear()
+        DATEDAY.clear()
         tda = datetime.now(india)
         DATEDAY.append(str(tda.strftime("%d ⚡ %m ⚡ %Y")))
-        timeout(DATEDAY,10)
+        #timeout(DATEDAY,10)
         await query.message.edit_text(text = f"<b>Date change to :'{DATEDAY[-1]}'</b>", reply_markup=InlineKeyboardMarkup([[ 
         			InlineKeyboardButton("Yesterday",callback_data='ystdy'), 
         			InlineKeyboardButton("Today",callback_data = 'tdy'), 
         			InlineKeyboardButton("Tommorow",callback_data='tmr') ]]))
         
     elif data == "tmr":
-        #DATEDAY.clear()
+        DATEDAY.clear()
         tm = datetime.now(india)+timedelta(1)
         DATEDAY.append(str(tm.strftime("%d ⚡ %m ⚡ %Y")))
-        timeout(DATEDAY,10)
+        #timeout(DATEDAY,10)
         await query.message.edit_text(text = f"<b>Date change to :'{DATEDAY[-1]}'</b>", reply_markup=InlineKeyboardMarkup([[ 
         			InlineKeyboardButton("Yesterday",callback_data='ystdy'), 
         			InlineKeyboardButton("Today",callback_data = 'tdy'), 
