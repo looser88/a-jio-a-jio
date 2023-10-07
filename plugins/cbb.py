@@ -16,7 +16,6 @@ async def timeout(list, timeout):
     
 global DATEDAY
 DATEDAY = []
-timeout(DATEDAY,10)
 @Bot.on_callback_query()
 async def cb_handler(client: Bot, query: CallbackQuery):
     india = pytz.timezone("Asia/Kolkata") #for Indian date and timings 
@@ -48,7 +47,8 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         			InlineKeyboardButton("Yesterday",callback_data='ystdy'), 
         			InlineKeyboardButton("Today",callback_data = 'tdy'), 
         			InlineKeyboardButton("Tommorow",callback_data='tmr') ]])) # A query msg edit for (in plugins->channel post->line 21) ==> this return a date from previous date stored in DATEDAY variable (line 10)
-        
+        time.sleep(10)
+        DATEDAY.clear()
     elif data == "tdy":
         DATEDAY.clear()
         tda = datetime.now(india)
@@ -58,7 +58,8 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         			InlineKeyboardButton("Yesterday",callback_data='ystdy'), 
         			InlineKeyboardButton("Today",callback_data = 'tdy'), 
         			InlineKeyboardButton("Tommorow",callback_data='tmr') ]]))
-        
+        time.sleep(10)
+        DATEDAY.clear()
     elif data == "tmr":
         DATEDAY.clear()
         tm = datetime.now(india)+timedelta(1)
@@ -68,5 +69,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         			InlineKeyboardButton("Yesterday",callback_data='ystdy'), 
         			InlineKeyboardButton("Today",callback_data = 'tdy'), 
         			InlineKeyboardButton("Tommorow",callback_data='tmr') ]]))
+        time.sleep(10)
+        DATEDAY.clear()
     else:
         pass
