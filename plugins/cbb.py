@@ -55,7 +55,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         			InlineKeyboardButton("Yesterday",callback_data='ystdy'), 
         			InlineKeyboardButton("Today",callback_data = 'tdy'), 
         			InlineKeyboardButton("Tommorow",callback_data='tmr') ]]))
-       await timeout(DATEDAY,10)
+        await timeout(DATEDAY,10)
     elif data == "tmr":
         DATEDAY.clear()
         tm = datetime.now(india)+timedelta(1)
