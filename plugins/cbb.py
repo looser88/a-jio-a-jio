@@ -40,7 +40,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         			InlineKeyboardButton("Today",callback_data = 'tdy'), 
         			InlineKeyboardButton("Tommorow",callback_data='tmr') ]])) # A query msg edit for (in plugins->channel post->line 21) ==> this return a date from previous date stored in DATEDAY variable (line 10)
         await DATEDAY.sleep(10)
-        await DATEDAY.delete()
+        await DATEDAY.clear()
         
     elif data == "tdy":
         DATEDAY.clear()
@@ -51,7 +51,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         			InlineKeyboardButton("Today",callback_data = 'tdy'), 
         			InlineKeyboardButton("Tommorow",callback_data='tmr') ]]))
         await DATEDAY.sleep(10)
-        await DATEDAY.delete()
+        await DATEDAY.clear()
         
     elif data == "tmr":
         DATEDAY.clear()
@@ -62,7 +62,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         			InlineKeyboardButton("Today",callback_data = 'tdy'), 
         			InlineKeyboardButton("Tommorow",callback_data='tmr') ]]))
         await DATEDAY.sleep(10)
-        await DATEDAY.delete()
+        await DATEDAY.clear()
         
     else:
         pass
