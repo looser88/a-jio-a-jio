@@ -32,7 +32,7 @@ Elements in <b>"{}{}"</b>
 #ex =>>>    '':['','','','']
 DATAODD = {
         'Radhaku_Neevera_Praanam_':['https://graph.org/file/1f2827a0980cc418ee6e1.jpg','tnvalue.in','ff426552eda72230153ea3450a0bce0557183ccb','-1001942664190'],
-        'Gundamma_Katha_':['https://graph.org/file/baff21a920cc09f0ba89a.jpg','moneycase.link','0c2406a0cf1b54db75fcba4cbb8e389bdc675eee','-1001942664190'],
+#        'Gundamma_Katha_':['https://graph.org/file/baff21a920cc09f0ba89a.jpg','moneycase.link','0c2406a0cf1b54db75fcba4cbb8e389bdc675eee','-1001942664190'],
         'Rajeshwari_Vilas_Coffee_Club_':['https://graph.org/file/db7a3d7d1a2654540cf99.jpg','links4money.com','668f8a8d31c4d5e55da03d0d21ae740f3caf5d14','-1001942664190'],
         'Ammayi_Garu_':['https://graph.org/file/8c7eda434e1f0baae0b81.jpg','links4money.com','668f8a8d31c4d5e55da03d0d21ae740f3caf5d14','-1001942664190'],
         'Oohalu_Gusagusalade_':['https://graph.org/file/70d5850fd6e9ed8cd7bc0.jpg','links4money.com','ba4f1e7f7cfbea8b02c4c031be2270e354e95d47','-1001942664190'],
@@ -95,7 +95,7 @@ DATAODD = {
 }
 DATAEVEN = {
         'Radhaku_Neevera_Praanam_':['https://graph.org/file/1f2827a0980cc418ee6e1.jpg','moneycase.link','0c2406a0cf1b54db75fcba4cbb8e389bdc675eee','-1001942664190'],
-        'Gundamma_Katha_':['https://graph.org/file/baff21a920cc09f0ba89a.jpg','tnvalue.in','ff426552eda72230153ea3450a0bce0557183ccb','-1001942664190'],
+#        'Gundamma_Katha_':['https://graph.org/file/baff21a920cc09f0ba89a.jpg','tnvalue.in','ff426552eda72230153ea3450a0bce0557183ccb','-1001942664190'],
         'Rajeshwari_Vilas_Coffee_Club_':['https://graph.org/file/db7a3d7d1a2654540cf99.jpg','links4money.com','f2c99e727ba0a517e53f77a31b4f79d8acfc318c','-1001942664190'],
         'Ammayi_Garu_':['https://graph.org/file/8c7eda434e1f0baae0b81.jpg','links4money.com','f2c99e727ba0a517e53f77a31b4f79d8acfc318c','-1001942664190'],
         'Oohalu_Gusagusalade_':['https://graph.org/file/70d5850fd6e9ed8cd7bc0.jpg','links4money.com','668f8a8d31c4d5e55da03d0d21ae740f3caf5d14','-1001942664190'],
