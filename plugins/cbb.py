@@ -34,34 +34,34 @@ async def cb_handler(client: Bot, query: CallbackQuery):
     elif data == "ystdy":
         DATEDAY.clear()
         ye = datetime.now(india)-timedelta(1)
-        DATEDAY.append(str(ye.strftime("%d ⚡ %m ⚡ %Y")))
+        s=DATEDAY.append(str(ye.strftime("%d ⚡ %m ⚡ %Y")))
         await query.message.edit_text(text = f"<b>Date change to :'{DATEDAY[-1]}'</b>", reply_markup=InlineKeyboardMarkup([[ 
         			InlineKeyboardButton("Yesterday",callback_data='ystdy'), 
         			InlineKeyboardButton("Today",callback_data = 'tdy'), 
         			InlineKeyboardButton("Tommorow",callback_data='tmr') ]])) # A query msg edit for (in plugins->channel post->line 21) ==> this return a date from previous date stored in DATEDAY variable (line 10)
-        await DATEDAY.sleep(10)
+        await s.sleep(10)
         await DATEDAY.clear()
         
     elif data == "tdy":
         DATEDAY.clear()
         tda = datetime.now(india)
-        DATEDAY.append(str(tda.strftime("%d ⚡ %m ⚡ %Y")))
+        s=DATEDAY.append(str(tda.strftime("%d ⚡ %m ⚡ %Y")))
         await query.message.edit_text(text = f"<b>Date change to :'{DATEDAY[-1]}'</b>", reply_markup=InlineKeyboardMarkup([[ 
         			InlineKeyboardButton("Yesterday",callback_data='ystdy'), 
         			InlineKeyboardButton("Today",callback_data = 'tdy'), 
         			InlineKeyboardButton("Tommorow",callback_data='tmr') ]]))
-        await DATEDAY.sleep(10)
+        await s.sleep(10)
         await DATEDAY.clear()
         
     elif data == "tmr":
         DATEDAY.clear()
         tm = datetime.now(india)+timedelta(1)
-        DATEDAY.append(str(tm.strftime("%d ⚡ %m ⚡ %Y")))
+        s=DATEDAY.append(str(tm.strftime("%d ⚡ %m ⚡ %Y")))
         await query.message.edit_text(text = f"<b>Date change to :'{DATEDAY[-1]}'</b>", reply_markup=InlineKeyboardMarkup([[ 
         			InlineKeyboardButton("Yesterday",callback_data='ystdy'), 
         			InlineKeyboardButton("Today",callback_data = 'tdy'), 
         			InlineKeyboardButton("Tommorow",callback_data='tmr') ]]))
-        await DATEDAY.sleep(10)
+        await s.sleep(10)
         await DATEDAY.clear()
         
     else:
