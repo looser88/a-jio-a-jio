@@ -34,16 +34,22 @@ async def channel_post(client: Client, message: Message):
     else:
         pass                
     if int(DATEDAY[-1][0:2]) % 2 != 0:#chaeking for ODD by given date
-        if filname in media.file_name: #matching name in dict key with arrival video file name
+        if filname in DATAODD.keys(): #matching name in dict key with arrival video file name
             chtid=int(DATAODD[filname][3])#for particular channel id
             pic=DATAODD[filname][0] #particuler images
             SL_URL=DATAODD[filname][1] #for particuler domine name
             SL_API=DATAODD[filname][2] #for particuler api 
            # chtid=message.chat.id # if you want pic+formet into bot pm     
             bot_msg = await message.reply_text("Please Wait...!", quote = True) #reply text please wait... to bot
-            await asyncio.sleep(1)      
+            await asyncio.sleep(1)
+        elif media.file_name in media.file_name:
+            link = await conv_link(client , message)
+            await message.reply_text(f"<b>Here is your link</b>\n\n{link}\n\n<code>{link}</code>")
+        else:
+            reply_text = await message.reply_text("❌Somthing went wrong")
+
     elif int(DATEDAY[-1][0:2]) % 2 == 0: #checking for EVEN
-        if filname in media.file_name:
+        if filname in DATAEVEN.keys():
             chtid=int(DATAEVEN[filname][3])
             pic=DATAEVEN[filname][0]
             SL_URL=DATAEVEN[filname][1]
@@ -51,22 +57,17 @@ async def channel_post(client: Client, message: Message):
             # chtid=message.chat.id # if you want pic+formet into bot pm
             bot_msg = await message.reply_text("Please Wait...!", quote = True) #reply text please wait... to bot
             await asyncio.sleep(1)
+        elif media.file_name in media.file_name:
+            link = await conv_link(client , message)
+            await message.reply_text(f"<b>Here is your link</b>\n\n{link}\n\n<code>{link}</code>")
+        else:
+            reply_text = await message.reply_text("❌Somthing went wrong")
     else:
-            reply_text = await message.reply_text("❌Don't send me messages directly I'm only for serials!")
-        
-    try:
-        post_message = await message.copy(chat_id = client.db_channel.id, disable_notification=True)
-    except FloodWait as e:
-        await asyncio.sleep(e.x)
-        post_message = await message.copy(chat_id = client.db_channel.id, disable_notification=True)
-    except Exception as e:
-        print(e)
-        await reply_text.edit_text("Something went Wrong..!")
-        return
-    converted_id = post_message.id * abs(client.db_channel.id)
-    string = f"get-{converted_id}"
-    base64_string = await encode(string)
-    Tlink = f"https://telegram.me/{client.username}?start={base64_string}"
+         reply_text = await message.reply_text(USER_REPLY_TEXT)
+
+    
+    Tlink = await conv_link(client , message)
+    await asyncio.sleep(1)
     Slink = await get_short(SL_URL, SL_API, Tlink) #generating short link with particular domine and api
     await bot_msg.edit("Analysing....!")
     await asyncio.sleep(1)
@@ -83,6 +84,22 @@ async def channel_post(client: Client, message: Message):
     await asyncio.sleep(1)
     await bot_msg.edit(BOTEFITMSG.format(filname, botfsno[0], Tlink, Slink, Size, DATEDAY[-1])) #msg edit to "please wait...(see line 39" msg ==> and finally the elements belongs to sent serials are updated here
     #await e_pic.edit) # msg edit in forwarder channel = "pic without captions (see line 41)" ==> thats return to our given format and short link ,date are updated here
+
+async def conv_link(client , message):
+    try:
+       post_message = await message.copy(chat_id = CHANNEL_ID, disable_notification=True)
+    except FloodWait as e:
+        await asyncio.sleep(e.x)
+        post_message = await message.copy(chat_id = CHANNEL_ID, disable_notification=True)
+    except Exception as e:
+        print(e) 
+        await client.send_message(message.chat.id, "Somthing is Wrong")
+    converted_id = post_message.id * abs(CHANNEL_ID)
+    string = f"get-{converted_id}"
+    base64_string = await encode(string)
+    link = f"https://telegram.me/{client.username}?start={base64_string}"
+    # await client.send_massage(message.chat.id , f"<b>Here is your link</b>\n\n{link}\n\n<code>{link}</code>", disable_web_page_preview = True)
+    return link
 
 async def get_short(SL_URL, SL_API, Tlink): #A simple func for shorting link
     # FireLinks shorten
