@@ -74,7 +74,7 @@ DATAODD = {
         'Gunasundari_':['https://graph.org/file/8d4b6b2e9703a7d97b546.jpg','moneycase.link','0c2406a0cf1b54db75fcba4cbb8e389bdc675eee','-1001965277713'],
         'Anu_':['https://graph.org/file/7a8f5ce25159932859193.jpg','onepagelink.in','5b9b84dfbc7b58a84ae25a75e2b5cf4fec69a4eb','-1001965277713'],
         'Family_Gangstars_':['https://graph.org/file/d08c55a1b259a3b5c95b7.jpg','tnvalue.in','ff426552eda72230153ea3450a0bce0557183ccb','-1001965277713'],
-        'Brundavana_':['https://graph.org/file/c900f93523b7a0656d6b2.jpg','linkshortify.com','9e82f5e0d917c633234194f39c2985752efd67e0','-1001335177183'],
+        'Brundavana_':['https://graph.org/file/c900f93523b7a0656d6b2.jpg','linkshortify.com','9e82f5e0d917c633234194f39c2985752efd67e0','-1001965277713'],
         'Bigg_Boss_Kannada_':['https://graph.org/file/011900e64399568f3fe93.jpg','linkshortify.com','4bc6f1e34d0409e5b8bd2197d42462bb1ec6048a','-1001335177183'],
 
         'Neenadhe_Naa_':['https://graph.org/file/fcbbf0a8c0413d4a59ad9.jpg','tnshort.net','0045de7eda3a082a38f05bdd0d1c4de1262709fb','-1001901182731'],
@@ -142,7 +142,7 @@ DATAEVEN = {
         'Gunasundari_':['https://graph.org/file/8d4b6b2e9703a7d97b546.jpg','tnvalue.in','ff426552eda72230153ea3450a0bce0557183ccb','-1001965277713'],
         'Anu_':['https://graph.org/file/7a8f5ce25159932859193.jpg','upshrink.com','2853363dbc172344dd8b979c9ff097d2a0ff4714','-1001965277713'],
         'Family_Gangstars_':['https://graph.org/file/d08c55a1b259a3b5c95b7.jpg','moneycase.link','0c2406a0cf1b54db75fcba4cbb8e389bdc675eee','-1001965277713'],
-        'Brundavana_':['https://graph.org/file/c900f93523b7a0656d6b2.jpg','linkshortify.com','9e82f5e0d917c633234194f39c2985752efd67e0','-1001335177183'],
+        'Brundavana_':['https://graph.org/file/c900f93523b7a0656d6b2.jpg','linkshortify.com','9e82f5e0d917c633234194f39c2985752efd67e0','-1001965277713'],
         'Bigg_Boss_Kannada_':['https://graph.org/file/011900e64399568f3fe93.jpg','tnshort.net','0045de7eda3a082a38f05bdd0d1c4de1262709fb','-1001335177183'],
 
         'Neenadhe_Naa_':['https://graph.org/file/fcbbf0a8c0413d4a59ad9.jpg','linkshortify.com','4bc6f1e34d0409e5b8bd2197d42462bb1ec6048a','-1001901182731'],
