@@ -27,7 +27,8 @@ async def date(bot, message):
 async def channel_post(client: Client, message: Message):
     #dateexc = datetime.now().strftime("%d")
     media = message.video or message.document
-    filname= media.file_name.split("S0")[0]#[1][2]etc
+    # filname= media.file_name.split("S0")[0]#[1][2]etc
+    filname = re.split("S\d", media.file_name)[0]#[1][2]etc
     botfsno= re.findall("S0.+E\d+\d", media.file_name)                   
     if len(DATEDAY)==0:
         await client.send_message(chat_id=message.chat.id, text="Error: invalid date please set /date")
