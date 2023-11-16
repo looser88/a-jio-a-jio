@@ -43,8 +43,9 @@ async def channel_post(client: Client, message: Message):
             bot_msg = await message.reply_text("Please Wait...!", quote = True) #reply text please wait... to bot
             await asyncio.sleep(1)
         elif media.file_name in media.file_name:
+            bot_msg = await message.reply_text("Please Wait...!", quote = True)
             link = await conv_link(client , message)
-            await message.reply_text(f"<b>Here is your link</b>\n\n{link}\n\n<code>{link}</code>")
+            await bot_msg.edit(f"<b>Here is your link</b>\n\n{link}\n\n<code>{link}</code>")
         else:
             reply_text = await message.reply_text("❌Somthing went wrong")
 
@@ -58,8 +59,9 @@ async def channel_post(client: Client, message: Message):
             bot_msg = await message.reply_text("Please Wait...!", quote = True) #reply text please wait... to bot
             await asyncio.sleep(1)
         elif media.file_name in media.file_name:
+            bot_msg = await message.reply_text("Please Wait...!", quote = True)
             link = await conv_link(client , message)
-            await message.reply_text(f"<b>Here is your link</b>\n\n{link}\n\n<code>{link}</code>")
+            await bot_msg.edit(f"<b>Here is your link</b>\n\n{link}\n\n<code>{link}</code>")
         else:
             reply_text = await message.reply_text("❌Somthing went wrong")
     else:
