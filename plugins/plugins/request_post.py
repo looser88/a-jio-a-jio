@@ -19,3 +19,7 @@ async def date(bot, message):
         			InlineKeyboardButton("Today",callback_data = 'tdy'), 
         			InlineKeyboardButton("Tommorow",callback_data='tmr') ]]))
 
+@Bot.on_message(filters.private & filters.user(ADMINS) & ~filters.text)
+async def channel_post(client: Client, message: Message):
+    dat = await message.reply_text("hello dear i am being ready pleas wait some days.........",quote=True)
+
