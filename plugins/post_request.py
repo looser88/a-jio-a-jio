@@ -11,7 +11,8 @@ import string
 import re
 
 @Bot.on_message(filters.command('start') & filters.private & subscribed)
-await message.reply_photo(
+async def start_command(client: Client, message: Message):
+    await message.reply_photo(
             photo="https://graph.org/file/983729d2228bafb4aad71.jp",
             caption="hello buddy ..."),
             quote = True)
