@@ -25,5 +25,5 @@ async def date(bot, message):
         			InlineKeyboardButton("Today",callback_data = 'tdy'), 
         			InlineKeyboardButton("Tommorow",callback_data='tmr') ]]))
 
-@Bot.on_message(filters.private & filters.user(ADMINS) & ~filters.text)
-async def channel_post(client: Client, message: Message):
+# @Bot.on_message(filters.private & filters.user(ADMINS) & ~filters.text)
+# async def channel_post(client: Client, message: Message):
