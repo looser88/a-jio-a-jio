@@ -11,3 +11,8 @@ aiohttp
 requests
 pyshorteners
 # --- for-jio-cinema --------- #
+xmltodict
+requests
+pyjwt
+protobuf==3.20.
+pyperclip
